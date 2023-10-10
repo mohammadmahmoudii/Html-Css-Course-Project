@@ -105,3 +105,93 @@ h2 {
         font-size: 1.4rem;
     }
 }
+
+
+.list
+{
+    list-style: none;
+    font-size: 1.8rem;
+}
+.list--inline .list--item
+{
+    display: inline;
+    margin-right: 2rem;
+}
+.list--tick .list--item{
+    /* list-style-image: url(../assets/images/tick-mark-icon.svg)  ;
+    margin-right: 2rem; */
+    background: url(../assets/images/tick-mark-icon.svg) no-repeat right center;
+    padding-right: 3rem;
+}
+
+@media screen and (min-width:1024px) {
+    .list--tick  .list--item{
+        font-size: 1.8rem ;
+        margin-bottom: 2rem;
+    }
+}
+.block-plan
+{
+    display: grid;
+    gap: 2rem 3rem;
+    margin-top: 2rem;
+
+}
+
+.card
+{
+    
+    border-radius: 25px;
+    background-color: #cca3a3;
+    max-width: 50rem;
+    overflow: hidden;
+}
+.card__header,.card__body
+{
+
+padding: 3rem 2.5rem
+
+}
+.card__header
+{
+    background-color:var(--color-secondary-dark);
+    
+
+}
+@media screen and (min-width:1024px){
+    .block-plan
+    {
+        grid-template-columns: repeat(3,1fr);
+
+    }
+}
+
+
+/* .block-plan
+{
+    display: grid;
+    gap: 2rem 3rem;
+    margin-top: 3rem;
+  
+}
+.card{
+
+    border-radius: 25px;
+    background-color: #f7cfcf;
+    max-width: 50rem;
+    overflow: hidden;
+}
+.card__header,.Card__body
+{
+    padding: 3rem 2.5rem ;
+}
+.card__header
+{
+    background-color: var(--color-primary);
+}
+
+@media screen and (min-width:1024px) {
+    .block-plan{
+        grid-template-columns: repeat(3,1fr);
+    }
+} */
