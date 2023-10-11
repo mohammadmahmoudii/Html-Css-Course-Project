@@ -9,6 +9,7 @@
 }
 :root {
   --color-primary: #ff5722;
+  --color-primary-light:#ff7a50;
   --color-secondary-light: #fff6f3;
   --color-secondary-dark: #ffa889;
   --color-navbar: #f8f8f8;
@@ -23,6 +24,7 @@ html {
 body {
   color: var(--color-body);
   font-size: 1.4rem;
+  font-family:'IRANYekan';
 }
 h1,
 h2,
@@ -111,11 +113,16 @@ h2 {
 {
     list-style: none;
     font-size: 1.8rem;
+    color: #000;
 }
 .list--inline .list--item
 {
     display: inline;
     margin-right: 2rem;
+}
+.list--item
+{
+  margin-bottom: 2rem;
 }
 .list--tick .list--item{
     /* list-style-image: url(../assets/images/tick-mark-icon.svg)  ;
@@ -133,17 +140,24 @@ h2 {
 .block-plan
 {
     display: grid;
-    gap: 2rem 3rem;
-    margin-top: 2rem;
+    gap: 10rem 6rem;
+    grid-template-columns: repeat(auto-fit,minmax(250px,320px));
+justify-content: center;
+    margin-top: 5rem;
 
 }
-
+.plan 
+{
+  color: var(--color-white);
+  font-size: 1.8rem;
+  transition: all 0.2s ease-out;
+}
 .card
 {
     
     border-radius: 25px;
-    background-color: #cca3a3;
-    max-width: 50rem;
+   
+    /* max-width: 40rem; */
     overflow: hidden;
 }
 .card__header,.card__body
@@ -154,18 +168,69 @@ padding: 3rem 2.5rem
 }
 .card__header
 {
-    background-color:var(--color-secondary-dark);
-    
+   
+    color: var(--color-white);
 
+}
+.card_secondry .card__header
+{
+  background-color:var(--color-secondary-dark);
+}
+.card_primary .card__header{
+  background-color: var(--color-primary-light);
+}
+.plan_introduction
+{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+.plan_price
+{
+  font-size: 3rem;
+}
+.plan_billing-cycle
+{
+  font-size: 1.8rem;
+}
+.plan_description
+{
+  display: block;
+  margin-top: 2rem;
+  font-size: 1.8rem;
+}
+.plan .btn--block
+{
+  font-size: 1.6rem;
+  margin-top: 10rem;
+}
+.plan__Popular
+{
+  transform: scale(1.1);
+}
+.plan__Popular:hover
+{
+  transform: scale(1.15);
+}
+.plan:hover
+{
+  transform: scale(1.05);
 }
 @media screen and (min-width:1024px){
-    .block-plan
-    {
-        grid-template-columns: repeat(3,1fr);
-
-    }
+   
+    .plan .btn--block
+{
+  font-size: 1.8rem;
+ 
+}
 }
 
+.container
+{
+  max-width: 1140px;
+  margin: 0 auto;
+}
 
 /* .block-plan
 {
