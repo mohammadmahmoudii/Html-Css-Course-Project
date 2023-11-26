@@ -232,31 +232,3 @@ padding: 3rem 2.5rem
   margin: 0 auto;
 }
 
-/* .block-plan
-{
-    display: grid;
-    gap: 2rem 3rem;
-    margin-top: 3rem;
-  
-}
-.card{
-
-    border-radius: 25px;
-    background-color: #f7cfcf;
-    max-width: 50rem;
-    overflow: hidden;
-}
-.card__header,.Card__body
-{
-    padding: 3rem 2.5rem ;
-}
-.card__header
-{
-    background-color: var(--color-primary);
-}
-
-@media screen and (min-width:1024px) {
-    .block-plan{
-        grid-template-columns: repeat(3,1fr);
-    }
-} */
